@@ -23,7 +23,7 @@ dir_arr.append(path2)
 print('\n{}'.format(dir_arr))
 
 # This process iterates over the generated list just to change it 
-# from a multidimensional list to a 1D list (array), dir_arr_proper.
+# from a multidimensional<?> (appears as : [[item]]) list to a 1D list (array), dir_arr_proper.
 
 for s in path2:
     dir_arr_proper.append(s)
