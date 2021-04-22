@@ -1,0 +1,41 @@
+Name : Number Files
+Author : mranaglyph
+Date : 4/22/2021
+
+This quick program is pretty simple.
+If you have a bunch of files that you would like renamed in 
+numerical order [0, 1, 2...], Number Files will ask you for 
+the path of the file(s) to rename, then it will ask for the 
+extension of the file(s), and it will rename all the files 
+in a particular folder!
+
+General Notes:
+This doesn't just pick the files at random to rename!
+It uses the 'Date Modified' data of a file to determine where it 
+should fall in the sequential list. In other words, the newer 
+a modification to a file, the higher a number it will be when renamed.
+
+Example:
+File Modified Yesterday --> Renamed to --> 0
+File Modified Today     --> Renamed to --> 1
+
+Potential Issues: 
+If two files have the same modified date, there will be an issue, 
+but the program should tell you which file had the trouble being 
+renamed, so I recommend modifying the file(s) it is stuck on and trying
+again.
+
+If two files have the same name, this program won't rename it, 
+so make sure you don't have a file named as the same number. Again, 
+it should tell you which one it is having trouble with, so you can 
+rename it/them manually, and try again. 
+
+When you are asked for the file extension, keep in mind 
+EVERY file in that folder/path will be renamed with the extension
+you provide. If you have multiple file types in the same folder, 
+do yourself a favor, and move them first. 
+
+Final Note:
+This program is just an attempt to try to reduce the effort of renaming
+files (of the same type) in bulk, but it is not perfect. That being said, 
+I hope you get some good use out of it, and enjoy!
