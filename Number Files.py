@@ -61,7 +61,7 @@ print('\n{}'.format(m_times2))
 # item in y-set. If the values are equal, it adds the file value to 
 # a different list (dir_arr_proper2). The file [name] value that it
 # adds is referenced from the original dir_arr_proper
-# that directly correlates to the c_times value 
+# that directly correlates to the m_times value 
 # compared on the y-set. It then continues comparisons until both
 # x and y sets are exhausted and all file names from z-set (unordered)
 # are now in a copy of z-set, ordered. 
