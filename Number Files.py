@@ -31,7 +31,7 @@ for s in path2:
 print('\n{}'.format(dir_arr_proper))
 
 # Now that it is a 1D list, path2 (now dir_arr_proper) can be used here to 
-# define the proper range. From there, the creation times of the files can be 
+# define the proper range. From there, the modified times of the files can be 
 # produced in order of thier appearance in the proper list.
 
 for i in range(len(dir_arr_proper)):
@@ -41,10 +41,10 @@ for i in range(len(dir_arr_proper)):
 
 print('\n{}'.format(m_times))
 
-# Now we have the original list of c_times, and can be sorted 
-# (permanent not .sort() or sorted() with c_times2 = c_times).
+# Now we have the original list of m_times, and can be sorted 
+# (permanent not .sort() or sorted() with m_times2 = m_times).
 # Needs a copy sorted so we still have the original 
-# Out of Order list as a reference
+# Out of Order list as a reference.
 
 m_times2 = m_times.copy()
 m_times2 = sorted(m_times2)
@@ -55,8 +55,8 @@ print('\n{}'.format(m_times2))
 # This next while loop is basically the heart of the program, 
 # which allows the orginal file list from the path the user input
 # to be organized by the file's modified date within the directory.
-# It iterates over the c_times2 (x-set) list and compares each item
-# in c_times2 to each item in c_times (y-set). Then, 
+# It iterates over the m_times2 (x-set) list and compares each item
+# in m_times2 to each item in m_times (y-set). Then, 
 # if the values are not equal, it checks the next 
 # item in y-set. If the values are equal, it adds the file value to 
 # a different list (dir_arr_proper2). The file [name] value that it
@@ -78,7 +78,7 @@ print('\n{}'.format(m_times2))
 #       Every value in the ordered list is compared to 
 #       every value in the unordered list. When a match 
 #       is found, it references the orginal file name
-#       that corresponds to that position in the c_times list, 
+#       that corresponds to that position in the m_times list, 
 #       and adds that file name to a new list, 
 #       now sorted by file modified date.
 
