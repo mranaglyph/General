@@ -23,7 +23,8 @@ Potential Issues:
 If two files have the same modified date, there will be an issue, 
 but the program should tell you which file had the trouble being 
 renamed, so I recommend modifying the file(s) it is stuck on and trying
-again.
+again. The modified date is hard to have duplicates of, however, 
+since your system evaluates a modified date down to the second.
 
 If two files have the same name, this program won't rename it, 
 so make sure you don't have a file named as the same number. Again, 
